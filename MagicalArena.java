@@ -1,5 +1,5 @@
 import java.util.Random;
-//import java.util.Scanner;
+import java.util.Scanner;
 //Creating Player and its atrributes.
 class Player {                                                     
     private int health;
@@ -45,8 +45,22 @@ class Player {
 public class MagicalArena {
     public static void main(String[] args) {
         //creating players
-        Player playerA = new Player(50, 5, 10);
-        Player playerB = new Player(100, 10, 5);
+        //Player playerA = new Player(50, 5, 10);
+        //Player playerB = new Player(100, 10, 5);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Player A's health, strength, and attack (space-separated):");
+        int aHealth = sc.nextInt();
+        int aStrength = sc.nextInt();
+        int aAttack = sc.nextInt();
+
+        System.out.println("Enter Player B's health, strength, and attack (space-separated):");
+        int bHealth = sc.nextInt();
+        int bStrength = sc.nextInt();
+        int bAttack = sc.nextInt();
+
+        Player playerA = new Player(aHealth, aStrength, aAttack);
+        Player playerB = new Player(bHealth, bStrength, bAttack);
 
             
 
