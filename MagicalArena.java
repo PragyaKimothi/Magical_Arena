@@ -20,10 +20,15 @@ public Player(int health, int strength, int attack) {                           
         int attackDiceRoll = random.nextInt(6) + 1;                   // Attacking Playrer rolls attacking dice
         int defenseDiceRoll = random.nextInt(6) + 1;                 // Defending Player rolls defending dice
 
+        // Calculating attack damage created
         int attackDamage = attack * attackDiceRoll;
+        // Calculating defense damage
         int defenseDamage = A.strength * defenseDiceRoll;
 
+        // Calculating  damage defended
         int damageDealt = Math.max(0, attackDamage - defenseDamage);
+
+        // Reduce opponent's health
         A.health -= damageDealt;
     }
     
