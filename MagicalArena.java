@@ -41,10 +41,13 @@ public Player(int health, int strength, int attack) {                           
     //Creating the MagicalArena class
     public class MagicalArena {
         public static void main(String[] args) {
-            // creating two players
+            // creating two players 
             Player playerA = new Player(50, 5, 10);
             Player playerB = new Player(100, 10, 5);
             
+            //Checking the health of the players and comparing them to chooose who gets to attack first.
+            //Player with lower  health attacks first. 
+
             while (playerA.getHealth() > 0 && playerB.getHealth() > 0) {
                 if (playerA.getHealth() < playerB.getHealth()) {
                     playerA.attack(playerB);
