@@ -16,22 +16,24 @@ public Player(int health, int strength, int attack) {                           
         return health;
     }
 
-    public void attack(Player A) {
+    public void attack(Player Competer) {
         int attackDiceRoll = random.nextInt(6) + 1;                   // Attacking Playrer rolls attacking dice
         int defenseDiceRoll = random.nextInt(6) + 1;                 // Defending Player rolls defending dice
 
         // Calculating attack damage created
         int attackDamage = attack * attackDiceRoll;
         // Calculating defense damage
-        int Damagedefend = A.strength * defenseDiceRoll;
+        int Damagedefend = Competer.strength * defenseDiceRoll;
 
         // Calculating  damage defended
         int damageDealt = Math.max(0, attackDamage - Damagedefend);
 
         // Reduce health of player
-        A.health -= damageDealt;
+        Competer.health -= damageDealt;
     }
-    
+    private int rollDie() {
+        return random.nextInt(6) +1 ;   // Die with 6 sides containing values ranging from 1 to 6.
+    }
     }
     public class MagicalArena {
         public static void main(String[] args) {
