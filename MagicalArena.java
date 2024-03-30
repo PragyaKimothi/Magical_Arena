@@ -33,5 +33,7 @@ public Player(int health, int strength, int attack) {                           
     }
     
     }
-
+    public class MagicalArena {
+        
+    }
     
