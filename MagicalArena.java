@@ -29,7 +29,7 @@ public Player(int health, int strength, int attack) {                           
         // Calculating  damage defended
         int damageDealt = Math.max(0, attackDamage - Damagedefended);
 
-        // Reduce health of player
+        // Reduce health of player 
         Competer.health -= damageDealt;
     }
     //Creating the die to roll
@@ -37,6 +37,8 @@ public Player(int health, int strength, int attack) {                           
         return random.nextInt(6) +1 ;   // Die with 6 sides containing values ranging from 1 to 6.
     }
     }
+    
+    //Creating the MagicalArena class
     public class MagicalArena {
         public static void main(String[] args) {
             // creating two players
