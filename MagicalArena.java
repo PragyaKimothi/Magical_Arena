@@ -6,7 +6,7 @@ class Player {
     private int attack;
     private Random random;
 
-public Player(int health, int strength, int attack) {
+public Player(int health, int strength, int attack) {                            //attributes of the Player
         this.health = health;
         this.strength = strength;
         this.attack = attack;
@@ -16,15 +16,15 @@ public Player(int health, int strength, int attack) {
         return health;
     }
 
-    public void attack(Player opponent) {
-        int attackRoll = random.nextInt(6) + 1; // Roll attacking dice
-        int defenseRoll = random.nextInt(6) + 1; // Roll defending dice
+    public void attack(Player A) {
+        int attackDiceRoll = random.nextInt(6) + 1;                   // Attacking Playrer rolls attacking dice
+        int defenseDiceRoll = random.nextInt(6) + 1;                 // Defending Player rolls defending dice
 
-        int attackDamage = attack * attackRoll;
-        int defenseDamage = opponent.strength * defenseRoll;
+        int attackDamage = attack * attackDiceRoll;
+        int defenseDamage = A.strength * defenseDiceRoll;
 
         int damageDealt = Math.max(0, attackDamage - defenseDamage);
-        opponent.health -= damageDealt;
+        A.health -= damageDealt;
     }
     
     }
