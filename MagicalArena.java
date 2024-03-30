@@ -79,7 +79,7 @@ public class MagicalArena {
             //Checking the health of the players and comparing them to chooose who gets to attack first.
             //Player with lower  health attacks first. 
 
-            while (playerA.getHealth() > 0 && playerB.getHealth() > 0) {
+           /* while (playerA.getHealth() > 0 && playerB.getHealth() > 0) {
                 if (playerA.getHealth() < playerB.getHealth()) {
                     playerA.attack(playerB);
                 } else {
@@ -90,6 +90,6 @@ public class MagicalArena {
             //Printing the health of the Players after the match
             System.out.println("Player A's health after the match is : " + playerA.getHealth());
             System.out.println("Player B's health after the match is : " + playerB.getHealth());
-           
+            */
     }
 }
