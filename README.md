@@ -18,6 +18,6 @@ Design a Magical Arena. Every Player is defined by a "health" attribute, "streng
 
    5.And so on.
 
-PROBLEM SOLUTION : 
+PROBLEM SOLUTION                                                                                               :                                                                                                              
 I have used Java to implement the solution.
 
