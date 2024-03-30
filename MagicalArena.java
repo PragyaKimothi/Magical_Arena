@@ -28,7 +28,7 @@ public Player(int health, int strength, int attack) {                           
         // Calculating  damage defended
         int damageDealt = Math.max(0, attackDamage - Damagedefend);
 
-        // Reduce opponent's health
+        // Reduce health of player
         A.health -= damageDealt;
     }
     
