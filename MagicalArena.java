@@ -55,6 +55,10 @@ public Player(int health, int strength, int attack) {                           
                     playerB.attack(playerA);
                 }
             }
+
+            //Printing the health of the Players after the match
+            System.out.print("Player A's health after the match is : " + playerA.getHealth());
+            System.out.println("Player B's health after the match is : " + playerB.getHealth());
            
     }
 }
