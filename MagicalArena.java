@@ -34,6 +34,7 @@ public Player(int health, int strength, int attack) {                           
     
     }
     public class MagicalArena {
-        
+        public static void main(String[] args) {
+           
     }
-    
+}
