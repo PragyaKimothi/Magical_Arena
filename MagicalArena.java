@@ -23,10 +23,10 @@ public Player(int health, int strength, int attack) {                           
         // Calculating attack damage created
         int attackDamage = attack * attackDiceRoll;
         // Calculating defense damage
-        int defenseDamage = A.strength * defenseDiceRoll;
+        int Damagedefend = A.strength * defenseDiceRoll;
 
         // Calculating  damage defended
-        int damageDealt = Math.max(0, attackDamage - defenseDamage);
+        int damageDealt = Math.max(0, attackDamage - Damagedefend);
 
         // Reduce opponent's health
         A.health -= damageDealt;
