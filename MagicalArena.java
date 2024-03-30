@@ -17,20 +17,22 @@ public Player(int health, int strength, int attack) {                           
     }
 
     public void attack(Player Competer) {
-        int attackDiceRoll = rollDie();                   // Attacking Playrer rolls attacking dice
-        int defenseDiceRoll =Competer.rollDie();                 // Defending Player rolls defending dice
+        int attackDieRoll = rollDie();                   // Attacking Playrer rolls attacking dice
+        int defenseDieRoll =Competer.rollDie();                 // Defending Player rolls defending dice
 
-        // Calculating attack damage created
-        int attackDamage = attack * attackDiceRoll;
-        // Calculating defense damage
-        int Damagedefend = Competer.strength * defenseDiceRoll;
+        // Calculating attack damage created by the attacking Player
+        int attackDamage = attack * attackDieRoll;
+
+        // Calculating damage defended by the defending player
+        int Damagedefended = Competer.strength * defenseDieRoll;
 
         // Calculating  damage defended
-        int damageDealt = Math.max(0, attackDamage - Damagedefend);
+        int damageDealt = Math.max(0, attackDamage - Damagedefended);
 
         // Reduce health of player
         Competer.health -= damageDealt;
     }
+    //Creating the die to roll
     private int rollDie() {
         return random.nextInt(6) +1 ;   // Die with 6 sides containing values ranging from 1 to 6.
     }
