@@ -47,14 +47,15 @@ public class MagicalArena {
         //creating players
         //Player playerA = new Player(50, 5, 10);
         //Player playerB = new Player(100, 10, 5);
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter Player A's health, strength, and attack (space-separated):");
+        Scanner sc = new Scanner(System.in);                              // using scanner class for user input
+
+        System.out.println("Enter Player A's health, strength, and attack : ");
         int aHealth = sc.nextInt();
         int aStrength = sc.nextInt();
         int aAttack = sc.nextInt();
 
-        System.out.println("Enter Player B's health, strength, and attack (space-separated):");
+        System.out.println("Enter Player B's health, strength, and attack : ");
         int bHealth = sc.nextInt();
         int bStrength = sc.nextInt();
         int bAttack = sc.nextInt();
@@ -62,10 +63,19 @@ public class MagicalArena {
         Player playerA = new Player(aHealth, aStrength, aAttack);
         Player playerB = new Player(bHealth, bStrength, bAttack);
 
-            
+        while (playerA.getHealth() > 0 && playerB.getHealth() > 0) {
+            if (playerA.getHealth() < playerB.getHealth()) {
+                playerA.attack(playerB);
+            } else {
+                playerB.attack(playerA);
+            }
+        }
 
-             
-            
+        System.out.println("Player A's final health: " + playerA.getHealth());
+        System.out.println("Player B's final health: " + playerB.getHealth());
+
+        sc.close();
+
             //Checking the health of the players and comparing them to chooose who gets to attack first.
             //Player with lower  health attacks first. 
 

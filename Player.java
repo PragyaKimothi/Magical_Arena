@@ -1,12 +1,13 @@
 import java.util.Random;
+
 //Creating Player and its atrributes.
-public class Player{
+class Player {                                                     
     private int health;
     private int strength;
     private int attack;
     private Random random;
 
-    public Player(int health, int strength, int attack) {
+    public Player(int health, int strength, int attack) {                        //attributes of the player
         this.health = health;
         this.strength = strength;
         this.attack = attack;
@@ -17,14 +18,26 @@ public class Player{
         return health;
     }
 
-    public void attack(Player opponent) {
-        int attackRoll = random.nextInt(6) + 1; // Roll attacking dice
-        int defenseRoll = random.nextInt(6) + 1; // Roll defending dice
+    public void attack(Player Competer) {
+        int attackDieRoll = rollDie();                         // Attacking Player rolls the attacking dice
+        int defenseDieRoll = Competer.rollDie();               // Defending Player rolls the defending dice
 
-        int attackDamage = attack * attackRoll;
-        int defenseDamage = opponent.strength * defenseRoll;
+        //Calculating the attack damage created by the attacking player 
+        int attackDamage = attack * attackDieRoll;
 
+        //Calculating the damage defended by the defending player
+        int defenseDamage = Competer.strength * defenseDieRoll;
+
+        //Calculating the damage 
         int damageDealt = Math.max(0, attackDamage - defenseDamage);
-        opponent.health -= damageDealt;
+
+        //Reducing the strength of the Defender
+        Competer.health -= damageDealt;
+    }
+
+    //Creating the Die to roll
+    private int rollDie() {
+        return random.nextInt(6)+1;            //Die with 6 sides having values ranging from 1 to 6.
     }
 }
+    
