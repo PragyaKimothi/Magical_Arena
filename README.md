@@ -8,13 +8,15 @@ Design a Magical Arena. Every Player is defined by a "health" attribute, "streng
 3. Assume two players . Player A 50 health 5 strength 10 attack Player B 100 health 10 stregnth and 5 attack 
    Attacking die and Defending die are both 6 sided die with values ranging from 1- 6
 
- 1.Player A attacks and rolls die. Die roll : 5 . Player B defends and rolls die. Die roll 2
+   1.Player A attacks and rolls die. Die roll : 5 . Player B defends and rolls die. Die roll 2
 
- 2.Attack damage is 5 * 10 = 50 ; Defending strength = 10 * 2 = 20 ; Player B health reduced by 30 to 70
+   2.Attack damage is 5 * 10 = 50 ; Defending strength = 10 * 2 = 20 ; Player B health reduced by 30 to 70
 
- 3.Player B attacks and rolls die. Die roll : 4. Player A defends and rolls die. Die Roll 3
+   3.Player B attacks and rolls die. Die roll : 4. Player A defends and rolls die. Die Roll 3
 
- 4.Attack damage is 4 * 5 = 20 ; Defending strength = 5 * 3 = 15 ; Player A health reduced by 5 to 45
+   4.Attack damage is 4 * 5 = 20 ; Defending strength = 5 * 3 = 15 ; Player A health reduced by 5 to 45
 
- 5.And so on.
+   5.And so on.
 
+PROBLEM SOLUTION :
+I have used Java to implement the 
