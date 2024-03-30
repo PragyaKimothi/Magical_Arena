@@ -1,6 +1,6 @@
 import java.util.Random;
 //Creating Player and its atrributes.
-class Player {
+public class Player{
     private int health;
     private int strength;
     private int attack;
@@ -26,23 +26,5 @@ class Player {
 
         int damageDealt = Math.max(0, attackDamage - defenseDamage);
         opponent.health -= damageDealt;
-    }
-}
-
-public class MagicalArena {
-    public static void main(String[] args) {
-        Player playerA = new Player(50, 5, 10);
-        Player playerB = new Player(100, 10, 5);
-
-        while (playerA.getHealth() > 0 && playerB.getHealth() > 0) {
-            if (playerA.getHealth() < playerB.getHealth()) {
-                playerA.attack(playerB);
-            } else {
-                playerB.attack(playerA);
-            }
-        }
-
-        System.out.print("Player A's health: " + playerA.getHealth());
-        System.out.println("Player B's health: " + playerB.getHealth());
     }
 }
