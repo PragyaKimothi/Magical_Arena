@@ -17,8 +17,8 @@ public Player(int health, int strength, int attack) {                           
     }
 
     public void attack(Player Competer) {
-        int attackDiceRoll = random.nextInt(6) + 1;                   // Attacking Playrer rolls attacking dice
-        int defenseDiceRoll = random.nextInt(6) + 1;                 // Defending Player rolls defending dice
+        int attackDiceRoll = rollDie();                   // Attacking Playrer rolls attacking dice
+        int defenseDiceRoll =rollDie();                 // Defending Player rolls defending dice
 
         // Calculating attack damage created
         int attackDamage = attack * attackDiceRoll;
