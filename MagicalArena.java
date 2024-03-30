@@ -39,6 +39,13 @@ public Player(int health, int strength, int attack) {                           
             Player playerA = new Player(50, 5, 10);
             Player playerB = new Player(100, 10, 5);
             
+            while (playerA.getHealth() > 0 && playerB.getHealth() > 0) {
+                if (playerA.getHealth() < playerB.getHealth()) {
+                    playerA.attack(playerB);
+                } else {
+                    playerB.attack(playerA);
+                }
+            }
            
     }
 }
