@@ -88,10 +88,6 @@ public class MagicalArena {
             System.out.println("Game Ends!");
         }
 
-
-
-        
-
        // sc.close();
             
     }
