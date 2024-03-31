@@ -48,4 +48,5 @@ public class PlayerTest {
         assertTrue(roll >= 1 && roll <= 6);                 // The rollDie() value should be between the range of 1 to 6
     
     }
+
 }
