@@ -1,6 +1,7 @@
 import java.util.Random;
 //import java.util.Scanner;
-//Creating Player and its atrributes.
+
+//Creating Player class along with its atrributes.
 class Player {                                                     
     private int health;
     private int strength;
