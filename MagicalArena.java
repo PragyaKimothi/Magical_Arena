@@ -1,5 +1,5 @@
 import java.util.Random;
-import java.util.Scanner;
+//import java.util.Scanner;
 //Creating Player and its atrributes.
 class Player {                                                     
     private int health;
@@ -45,10 +45,10 @@ class Player {
 public class MagicalArena {
     public static void main(String[] args) {
         //creating players
-        //Player playerA = new Player(50, 5, 10);
-        //Player playerB = new Player(100, 10, 5);
+        Player playerA = new Player(50, 5, 10);
+        Player playerB = new Player(100, 10, 5);
 
-        Scanner sc = new Scanner(System.in);                              // using scanner class for user input
+        /*Scanner sc = new Scanner(System.in);                              // using scanner class for user input
 
         System.out.println("Enter Player A's health, strength, and attack : ");
         int aHealth = sc.nextInt();
@@ -61,8 +61,10 @@ public class MagicalArena {
         int bAttack = sc.nextInt();
 
         Player playerA = new Player(aHealth, aStrength, aAttack);
-        Player playerB = new Player(bHealth, bStrength, bAttack);
+        Player playerB = new Player(bHealth, bStrength, bAttack);*/
 
+        //Checking the health of the players and comparing them to chooose who gets to attack first.
+        //Player with lower  health attacks first. 
         while (playerA.getHealth() > 0 && playerB.getHealth() > 0) {
             if (playerA.getHealth() < playerB.getHealth()) {
                 playerA.attack(playerB);
@@ -71,25 +73,11 @@ public class MagicalArena {
             }
         }
 
-        System.out.println("Player A's final health: " + playerA.getHealth());
-        System.out.println("Player B's final health: " + playerB.getHealth());
+        //Printing the health of the Players after the match
+        System.out.println("Player A's health after the match is : " + playerA.getHealth());
+        System.out.println("Player B's health after the match is : " + playerB.getHealth());
 
-        sc.close();
-
-            //Checking the health of the players and comparing them to chooose who gets to attack first.
-            //Player with lower  health attacks first. 
-
-           /* while (playerA.getHealth() > 0 && playerB.getHealth() > 0) {
-                if (playerA.getHealth() < playerB.getHealth()) {
-                    playerA.attack(playerB);
-                } else {
-                    playerB.attack(playerA);
-                }
-            }
-
-            //Printing the health of the Players after the match
-            System.out.println("Player A's health after the match is : " + playerA.getHealth());
-            System.out.println("Player B's health after the match is : " + playerB.getHealth());
-            */
+        //sc.close();
+            
     }
 }   
