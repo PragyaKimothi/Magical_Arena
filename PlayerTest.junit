@@ -1,5 +1,6 @@
 //Test to check the correctness of the Player class
 //Importing the junit class
+
 //import java.util.Scanner;
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -29,5 +30,19 @@ public class PlayerTest {
         assertTrue(defending.getHealth() < 100);              // Defending player's health should be reduced
     }
 
-    
+
+    @Test
+    public void testRollDie() {                              // Test to check the rollDie() method
+        Player player = new Player(100, 10, 5);
+
+        /*System.out.println("Enter Player health, strength, and attack : ");
+        int aHealth = sc.nextInt();
+        int aStrength = sc.nextInt();
+        int aAttack = sc.nextInt();
+        Player player = new Player( ahealth, aStrength, aAttack);
+        */
+
+        int roll = player.rollDie();
+        assertTrue(roll >= 1 && roll <= 6);                 // The rollDie() value should be between the range of 1 to 6
+    }
 }
