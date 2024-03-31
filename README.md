@@ -31,3 +31,4 @@ attack() : This is a method in the Player class used to  represent the attack . 
 attack damage created = attack value * attacking die roll (attacking player)
 
 damage defended = strength value * defending die roll (defending player )
+The diffrence of attack damage created and damage defended is the damage value. It is then reduced from the defending player's health.
