@@ -1,0 +1,4 @@
+//Test to check the correctness of the Player class
+import static org.junit.Assert.*;
+import org.junit.Test;
+
