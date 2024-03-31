@@ -35,8 +35,8 @@ damage defended = strength value * defending die roll (defending player )
 The diffrence of attack damage created by the attacking player and damage defended by the defending player is the damage value. It is then reduced from the defending player's health.
 
 class MagicalArena() : This class is uesd to represent the match between the two players( PlayerA and PlayerB ).The player with lower health value attacks first at the start of a match. The game ends when any player's health reaches 0. Then the final health of both the players after the completion of the game is printed.
-Then the winner player is printed.                                                                                                   
-
+                                                                                                
+Then the winner player is printed.
 To take user input scanner class can be used.                                                                  
 
 Unit Tests :                                                                                                              
