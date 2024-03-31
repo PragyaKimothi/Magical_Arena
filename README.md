@@ -36,6 +36,9 @@ The diffrence of attack damage created by the attacking player and damage defend
 
 class MagicalArena() : This class is uesd to represent the match between the two players( PlayerA and PlayerB ).The player with lower health value attacks first at the start of a match. The game ends when any player's health reaches 0. Then the final health of both the players after the completion of the game is printed.                                                                                                       
 
-To take user input scanner class can be used. 
+To take user input scanner class can be used.                                                                  
 
+Unit Tests :                                                                                                              
+testAttack() : This method is used to test the attack() method in class Player. In this it is checked whether the attack() method is correctly reducing the health value of the defending player after the match completion.                                                                                                    
 
+testRollDie() : 

@@ -77,6 +77,11 @@ public class MagicalArena {
         System.out.println("Player A's health after the match is : " + playerA.getHealth());
         System.out.println("Player B's health after the match is : " + playerB.getHealth());
 
+        if(playerA.getHealth()==0 || playerB.getHealth()==0) {
+            System.out.println("GAME END");
+        }
+
+
        // sc.close();
             
     }
