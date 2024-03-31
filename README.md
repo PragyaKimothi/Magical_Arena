@@ -44,4 +44,6 @@ Unit test for Player class.
 
 testAttack() : This method is used to test the attack() method of class Player. In this it is checked whether the attack() method is correctly reducing the health value of the defending player after the match completion.                                                                                                    
 
-testRollDie() : This method is uesd to test the rollDie() method of class Player. In this it is checked whether the rollDie() method  return a valid value ranging between 1 to 6.
+testRollDie() : This method is uesd to test the rollDie() method of class Player. In this it is checked whether the rollDie() method  return a valid value ranging between 1 to 6.                                                                                                             
+
+Junit settings done to run the Unit Test.
