@@ -29,10 +29,10 @@ class Player {
         int defenseDamage = Competer.strength * defenseDieRoll;
 
         //Calculating the damage 
-        int damageDealt = Math.max(0, attackDamage - defenseDamage);
+        int Totaldamage = Math.max(0, attackDamage - defenseDamage);
 
         //Reducing the strength of the Defender
-        Competer.health -= damageDealt;
+        Competer.health -= Totaldamage;
     }
 
     //Creating the Die to roll
