@@ -10,7 +10,20 @@ public class PlayerTest {
         Player attacking = new Player(50, 5, 10);
         Player defending = new Player(100, 10, 5);
 
-        
+        /*Scanner sc = new Scanner(System.in);                              // using scanner class for user input
+
+        System.out.println("Enter Player A's health, strength, and attack : ");
+        int aHealth = sc.nextInt();
+        int aStrength = sc.nextInt();
+        int aAttack = sc.nextInt();
+
+        System.out.println("Enter Player B's health, strength, and attack : ");
+        int bHealth = sc.nextInt();
+        int bStrength = sc.nextInt();
+        int bAttack = sc.nextInt();
+
+        Player attacking = new Player(aHealth, aStrength, aAttack);
+        Player defending = new Player(bHealth, bStrength, bAttack); */
 
         attacking.attack(defending);
         assertTrue(defending.getHealth() < 100);              // Defending player's health should be reduced
