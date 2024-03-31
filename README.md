@@ -22,3 +22,5 @@ PROBLEM SOLUTION                                                                
 I have used Java to implement the solution for Magical Arena.
 
 EXPLANATION :                                                                                                              
+class Player() : This class is used to represent a player along with its attributes ( health, strength, and attack ) in the Magical Arena.
+rollDie() : This is a method in the Player class  used to represent the die that is being rolled during the match by the attacking player and the defending player respectively .The  die has six sides and each side has values ranging between 1 to 6.
