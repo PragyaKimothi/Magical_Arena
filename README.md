@@ -1,4 +1,4 @@
-# Magical_Arena
+# Magical Arena
 PROBLEM STATEMENT :                                                                                                              
 Design a Magical Arena. Every Player is defined by a "health" attribute, "strength" attribute and an "attack" attribute - all positive integers. The player dies if his health attribute touches 0.
 
@@ -34,4 +34,4 @@ damage defended = strength value * defending die roll (defending player )
 
 The diffrence of attack damage created and damage defended is the damage value. It is then reduced from the defending player's health.
 
-class MagicalArena() : 
+class MagicalArena() : This class is uesd to represent the match between the two players( PlayerA and PlayerB ).The player with lower health value attacks first at the start of a match. The game ends when any player's health reaches 0.  
