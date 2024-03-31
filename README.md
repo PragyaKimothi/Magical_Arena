@@ -32,6 +32,6 @@ attack damage created = attack value * attacking die roll (attacking player)
 
 damage defended = strength value * defending die roll (defending player )
 
-The diffrence of attack damage created and damage defended is the damage value. It is then reduced from the defending player's health.
+The diffrence of attack damage created by the attacking player and damage defended by the defending player is the damage value. It is then reduced from the defending player's health.
 
 class MagicalArena() : This class is uesd to represent the match between the two players( PlayerA and PlayerB ).The player with lower health value attacks first at the start of a match. The game ends when any player's health reaches 0.  
