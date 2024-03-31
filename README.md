@@ -24,6 +24,10 @@ I have used Java to implement the solution for Magical Arena.
 EXPLANATION :                                                                                                              
 class Player() : This class is used to represent a player along with its attributes ( health, strength, and attack ) in the Magical Arena.It consist of methods to roll the die ( rollDie() ), attack the player ( void attack() ).
 
-rollDie() : This is a method in the Player class  used to represent the die that is being rolled during the match by the attacking player and the defending player respectively .The  die has six sides and each side has values ranging between 1 to 6.
-
+rollDie() : This is a method in the Player class  used to represent the die that is being rolled during the match by the attacking player and the defending player respectively .The  die has six sides and each side has values ranging between 1 t0 6.
+                                                                                     
+attack() : This is a method in the Player class used to  represent the attack . The attacking player rolls the attacking die and defending player rolls the defending die respectively.
+attack damage created = attack value * attacking die roll
+damage defended = strength value * defending die roll
+                                                                                                                                                                                                                
 
