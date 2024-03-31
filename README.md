@@ -29,6 +29,7 @@ rollDie() : This is a method in the Player class  used to represent the die that
 attack() : This is a method in the Player class used to  represent the attack . The attacking player rolls the attacking die and defending player rolls the defending die respectively.
 
 attack damage created = attack value * attacking die roll
+
 damage defended = strength value * defending die roll
                                                                                                                                                                                                                 
 
