@@ -22,4 +22,8 @@ PROBLEM SOLUTION                                                                
 I have used Java to implement the solution.
 
 EXPLANATION :                                                                                                              
+<<<<<<< HEAD
 class Player : This class is used to represent a player along with its attributes ( health, strngth, and attack ).                                                                                                      rollDie() : This is a method used to claculate the value of the die rolled during the match by the players.                                                                                                                                                                                                                                                                                                                                             
+=======
+class Player : This class is used to represent a player along with its attributes ( health, strngth, and attack ).                                                                         rollDie() : This is a method used to claculate the value of the die rolled during the match by the players.                                                                                                                           
+>>>>>>> 1aad515e3555d9652e2a411b946c58809b36f986
