@@ -39,6 +39,6 @@ class MagicalArena() : This class is uesd to represent the match between the two
 To take user input scanner class can be used.                                                                  
 
 Unit Tests :                                                                                                              
-testAttack() : This method is used to test the attack() method in class Player. In this it is checked whether the attack() method is correctly reducing the health value of the defending player after the match completion.                                                                                                    
+testAttack() : This method is used to test the attack() method of class Player. In this it is checked whether the attack() method is correctly reducing the health value of the defending player after the match completion.                                                                                                    
 
-testRollDie() : 
+testRollDie() : This method is uesd to test the rollDie() method of class Player. In this it is checked whether the rollDie() method  return a valid value ranging between 1 to 6.
