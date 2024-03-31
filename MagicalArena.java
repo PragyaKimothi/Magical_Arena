@@ -74,8 +74,21 @@ public class MagicalArena {
         }
 
         //Printing the health of the Players after the match
-        //System.out.println("Player A's health after the match is : " + playerA.getHealth());
-        //System.out.println("Player B's health after the match is : " + playerB.getHealth());
+        System.out.println("Player A's health after the match is : " + playerA.getHealth());
+        System.out.println("Player B's health after the match is : " + playerB.getHealth());
+
+        // Determining the  winner
+        if (playerA.getHealth() <= 0 && playerB.getHealth() <= 0) {
+            System.out.println("Both players have fallen. It's a draw!");
+        } else if (playerA.getHealth() <= 0) {
+            System.out.println("Player B is the winner!");
+            System.out.println("Game Ends!");
+        } else {
+            System.out.println("Player A is the winner!");
+            System.out.println("Game Ends!");
+        }
+
+
 
         
 
