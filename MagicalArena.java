@@ -81,7 +81,6 @@ public class MagicalArena {
             System.out.println("GAME END");
         }
 
-
        // sc.close();
             
     }
