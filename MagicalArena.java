@@ -90,6 +90,6 @@ public class MagicalArena {
         }
 
        // sc.close();
-            
+
     }
 }   
