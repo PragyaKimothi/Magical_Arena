@@ -28,8 +28,8 @@ public class PlayerTest {
 
         attacking.attack(defending);
         assertTrue(defending.getHealth() < 100);              // Defending player's health should be reduced
+    
     }
-
 
     @Test
     public void testRollDie() {                              // Test to check the rollDie() method
@@ -44,5 +44,6 @@ public class PlayerTest {
 
         int roll = player.rollDie();
         assertTrue(roll >= 1 && roll <= 6);                 // The rollDie() value should be between the range of 1 to 6
+    
     }
 }
