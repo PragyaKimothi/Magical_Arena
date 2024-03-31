@@ -40,6 +40,7 @@ class Player {
     int rollDie() {
         return random.nextInt(6)+1;            //Die with 6 sides having values ranging from 1 to 6.
     }
+
 }
     
 //Creating the MagicalArena class
@@ -92,4 +93,5 @@ public class MagicalArena {
        // sc.close();
 
     }
+
 }   
