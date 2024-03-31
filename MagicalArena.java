@@ -92,4 +92,4 @@ public class MagicalArena {
             System.out.println("Player B's health after the match is : " + playerB.getHealth());
             */
     }
-}
+}   
