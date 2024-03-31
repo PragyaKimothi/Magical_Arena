@@ -74,8 +74,8 @@ public class MagicalArena {
         }
 
         //Printing the health of the Players after the match
-        System.out.println("Player A's health after the match is : " + playerA.getHealth());
-        System.out.println("Player B's health after the match is : " + playerB.getHealth());
+        //System.out.println("Player A's health after the match is : " + playerA.getHealth());
+        //System.out.println("Player B's health after the match is : " + playerB.getHealth());
 
         
 
