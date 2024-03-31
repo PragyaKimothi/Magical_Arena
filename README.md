@@ -36,3 +36,5 @@ The diffrence of attack damage created by the attacking player and damage defend
 
 class MagicalArena() : This class is uesd to represent the match between the two players( PlayerA and PlayerB ).The player with lower health value attacks first at the start of a match. The game ends when any player's health reaches 0. Then the final health of both the players after the completion of the game is printed.
 Scanner class is used to take user input.
+
+
