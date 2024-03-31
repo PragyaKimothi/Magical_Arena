@@ -1,5 +1,6 @@
 //Test to check the correctness of the Player class
 //Importing the junit class
+//import java.util.Scanner;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
@@ -8,6 +9,8 @@ public class PlayerTest {
     public void testAttack() {                          // Test to check the performance of attack() method
         Player attacking = new Player(50, 5, 10);
         Player defending = new Player(100, 10, 5);
+
+        
 
         attacking.attack(defending);
         assertTrue(defending.getHealth() < 100);              // Defending player's health should be reduced
